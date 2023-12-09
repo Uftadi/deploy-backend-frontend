@@ -26,7 +26,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -35,12 +34,22 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+form {
+  display: block;
+  margin-left: 100px;
+}
+form label{
+  display: block;
+}
+form label input{
+  display: block;
+}
 button {
+  margin-left: 10px;
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 0.3em .8em;
+  font-size: .8em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
