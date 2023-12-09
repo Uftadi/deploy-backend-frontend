@@ -31,13 +31,13 @@ const getBookById = async (req, res) => {
 const addNewBook = async (req, res) => {
     try {
         await db.read()
-        if(
-            req.body.title &&
-            req.body.author &&
-            req.body.genre &&
-            req.body.publication_year &&
-            req.body.rating
-        ){
+        // if(
+        //     req.body.title &&
+        //     req.body.author &&
+        //     req.body.genre &&
+        //     req.body.publication_year &&
+        //     req.body.rating
+        // ){
             const newBook = {
                 id: uuidv4(),
                 title: req.body.title,
@@ -49,9 +49,9 @@ const addNewBook = async (req, res) => {
             db.data.books.push(newBook)
             db.write()
             res.status(201).send('book: ' + req.body.title + ' is added')
-        }else{
-            res.status(404).send('some attributes are missing')
-        }
+        // }else{
+            // res.status(404).send('some attributes are missing')
+        // }
     } catch (error) {
         res.status(500).send(error)
     }
