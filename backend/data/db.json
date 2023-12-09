@@ -1,7 +1,7 @@
 {
   "books": [
     {
-      "id": "87d19092-52a9-4b0c-b9cb-a6b433f7a812",
+      "id": 1,
       "title": "The Lord of the Rings",
       "author": "J.R.R. Tolkien",
       "genre": "Fantasy",
@@ -9,7 +9,7 @@
       "rating": 4.8
     },
     {
-      "id": "87d19092-52a9-4b0c-b9cb-a6b433f7a843",
+      "id": 2,
       "title": "1984",
       "author": "George Orwell",
       "genre": "Dystopia",
@@ -17,7 +17,7 @@
       "rating": 4.5
     },
     {
-      "id": "87d19092-52a9-4b0c-b9cb-a6b433f7a871",
+      "id": 3,
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "genre": "Novel",
@@ -25,28 +25,12 @@
       "rating": 4.7
     },
     {
-      "id": "87d19092-52a9-4b0c-b9cb-a6b433f7a853",
+      "id": 4,
       "title": "The Metamorphosis",
       "author": "Franz Kafka",
       "genre": "Short Story",
       "publication_year": 1915,
       "rating": 4.4
-    },
-    {
-      "id": "87d19092-52a9-4b0c-b9cb-a6b433f7a877",
-      "title": "1984",
-      "author": "bsp",
-      "genre": "bsp",
-      "publication_year": 1949,
-      "rating": 4.9
-    },
-    {
-      "id": "da4d4891-4588-40f1-aeef-9a325b65475f",
-      "title": "adfafds",
-      "author": "bsp",
-      "genre": "bsp",
-      "publication_year": 1913449,
-      "rating": 4.9
     }
   ]
 }

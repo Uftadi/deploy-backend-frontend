@@ -16,7 +16,7 @@ const getAllBooks = async (req, res) => {
 const getBookById = async (req, res) => {
     try {
         await db.read()
-        const ownId = Number(req.params.id)
+        const ownId = req.params.id
         if(req.params.id){
             const book = db.data.books.filter((book)=> book.id === ownId)
             res.status(200).send(book)
@@ -63,8 +63,11 @@ const deleteBook = async (req, res) => {
         const ownId = req.params.id
         if(ownId){
             const data = db.data.books
-            const findBook = data.filter((book) => book.id === ownId )
+            const findBook = data.findIndex((book) =>{
+                return book.id === ownId
+            } )
             data.splice(findBook, 1)
+            db.write()
             res.status(202).send('book is deleted')
         }else{
             res.status(404).send('false id')
